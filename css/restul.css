@@ -1,0 +1,865 @@
+html, body {
+    background-color: white;
+    background-size: 100%;;
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    
+  }
+  
+  
+  
+  .box {
+      /*display: inline;
+      /*width: 1500px;*/
+      margin: auto;
+    }
+  
+  .title{
+      position: relative;
+      float: left;
+      top: -30px;
+      color: grey;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: bolder;
+  }
+  
+  .title a{
+    color: grey;
+  }
+  a:link{
+    text-decoration: none;
+  }
+  
+  .logo img{
+     /* display: inline;*/
+      position: relative;
+      float: left;
+      left: 10px;
+      top: 1px;
+      width: 70px;
+      align-items: center;
+      
+  }
+  
+  /* Navbar container */
+  .navbar {
+      float: right;
+      
+      display: flex;
+      overflow: hidden;
+      background-color: #E6E6FA;
+      font-family: Arial;
+     
+    }
+    
+    /* Links inside the navbar */
+    .navbar a {
+      
+      float: right;
+      top: 10px;
+      font-size: 16px;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      border: 1px solid grey;
+      
+    }
+    
+    /* The dropdown container */
+    .dropdown1 {
+      float: right;
+      overflow: hidden;
+      border: 1px solid grey;
+    }
+    
+    /* Dropdown button */
+    .dropdown1 .clubulnostru {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+    
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown1:hover .clubulnostru {
+      background-color: yellow;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown1-content {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown1-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    /* Add a orange background color to dropdown links on hover */
+    .dropdown1-content a:hover {
+      background-color: orange;
+    }
+    
+    
+    /* Show the dropdown menu on hover */
+    .dropdown1:hover .dropdown1-content {
+      display: block;
+    }
+  
+    /*##########################
+    DROPDOWN2
+    ############################*/
+  
+     /* The dropdown container */
+     .dropdown2 {
+      border: 1px solid grey;
+      float: right;
+      overflow: hidden;
+    }
+    
+    /* Dropdown button */
+    .dropdown2 .claseantrenori {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+    
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown2:hover .claseantrenori {
+      background-color: yellow;
+    }
+    
+    /* Dropdown content (hidden by default) */
+    .dropdown2-content {
+      display: none;
+      position: absolute;
+      background-color: yellow;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown2-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    /* Add a orange background color to dropdown links on hover */
+    .dropdown2-content a:hover {
+      background-color: orange;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown2:hover .dropdown2-content {
+      display: block;
+    }
+    @media (max-width:2000px){
+      .buttons {
+        display: inline;
+        position: relative;
+        top: -420px;
+      }
+      
+      button{
+        position: relative;
+        padding: 15px;
+      }
+      
+      button[name=bleft]{
+        position: relative;
+        left: 10px;
+      }
+      button[name=bright]{
+        position: relative;
+        left: 1423px;
+      }
+       
+  .imghero img{
+    width: 1500px;
+    position: relative;
+    filter: brightness(65%);
+    top: -30px;
+    left: 10px;
+  }
+  
+  .imghero_text p1{
+    position: absolute;
+    top: 52%;
+    left: 250px;
+    -webkit-animation:colorchange 20s infinite alternate;
+  }
+  
+  .imghero_text p{
+    position: absolute;
+    top: 60%;
+    left: 250px;
+    -webkit-animation:colorchange 20s infinite alternate;
+  }
+  
+  #myAudio{
+    display: none;
+  }
+
+  #abtn{
+    position: relative;
+    left: 1200px;
+  }
+
+  @-webkit-keyframes colorchange {
+        0% {
+          
+          color: blue;
+        }
+        
+        10% {
+          
+          color: #8e44ad;
+        }
+        
+        20% {
+          
+          color: #1abc9c;
+        }
+        
+        30% {
+          
+          color: #d35400;
+        }
+        
+        40% {
+          
+          color: blue;
+        }
+        
+        50% {
+          
+          color: #34495e;
+        }
+        
+        60% {
+          
+          color: blue;
+        }
+        
+        70% {
+          
+          color: #2980b9;
+        }
+        80% {
+       
+          color: #f1c40f;
+        }
+        
+        90% {
+       
+          color: #2980b9;
+        }
+        
+        100% {
+          
+          color: pink;
+        }
+      }
+  
+  .imghero_text p1{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+  }
+  
+  .imghero_text p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .box1{
+    position: relative;
+    display: inline-flex;
+    top: -30px;
+    margin: auto;
+    width: 100%;
+  }
+  .box1_1{
+  
+    background-color: whitesmoke;
+    width: 35%;
+    text-align: center;
+  }
+  .box1_2{
+    
+    background-color: black;
+    width: 35%;
+    text-align: center;
+  }
+  
+  .box1_2 p{
+    color: white;
+  }
+  
+  .box1_3{
+    background-color: grey;
+    width: 35%;
+    text-align: center;
+  }
+  
+  .box1_3 p{
+    color: white;
+  }
+  
+  
+  /*########################
+  ####SERVICII##############
+  #########################*/
+  
+  .servicii_text{
+    text-align: left;
+    width: 100%;
+    position: relative;
+    top: 20%;
+    left: -6.5%;
+    font-size: 50px;
+    
+  }
+  
+  .servicii_tabel{
+    text-align: left;
+    width: 80%;
+    position: relative;
+    top: 30%;
+    margin-left: 115px;
+    
+  }
+  th{
+    text-align: left;
+    color: grey;
+  }
+  
+  .servicii_box1{
+    position: relative;
+    display: inline-flex;
+    top: 270px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  /*##########################
+  ####ABONAMENTE##############
+  ###########################*/
+  
+ #print{
+   position: relative;
+   top: -1000px;
+   left: 1000px;
+ }
+
+  .abonamente_text1{
+    text-align: left;
+    position: relative;
+    top: 20%;
+    left: -6.5%;
+    color: black;
+    font-size: 50px;
+    
+  }
+  .abonamente_text2{
+    text-align: left;
+    left: 7.7%;
+    position: relative;
+    top: 25%;
+    color: black;
+    font-size: 20px;
+    
+  }
+  .abonamente_tabel{
+    text-align: right;
+    width: 80%;
+    position: relative;
+    top: 25%;
+    margin-left: 115px;
+    
+  }
+  .abonamente_tabel th{
+    color: grey;
+  }
+  
+  .abonamente_tabel td{
+    color: orange;
+    font-weight: bold;
+  }
+  /*##########################
+  ####MASAJ##############
+  ###########################*/
+  
+  
+  .masaj_text1{
+    width: 100%;
+    text-align: left;
+    position: relative;
+    top: 20%;
+    left: -6.5%;
+    font-size: 50px;
+    
+  }
+  .masaj_text2{
+    width: 80%;
+    position: relative;
+    top: 20%;
+    color: black;
+    font-size: 15px;
+    left: 7%;
+  }
+  .masaj_text2 p{
+    color: grey;
+    margin: 1px;
+  }
+  
+  .masaj_poza_text1{
+    position: relative;
+    top: 190px;
+    left: 10%;
+    font-size: 50px;
+  }
+  .masaj_poza_text2{
+    position: relative;
+    top: 190px;
+    left: 25%;
+    font-size: 40px;
+  }
+  .masaj_poza_text1 p{
+    color: black;
+    margin: 1px;
+    
+  }
+  .masaj_poza_text2 p{
+    color: black;
+    margin: 1px;
+  }
+  .masaj_poza1{
+    position: relative;
+    top: 200px;
+    left: 20%;
+  }
+  .masaj_text3{
+    text-align: left;
+    position: relative;
+    top: 250px;
+    left:7%;
+    color: black;
+    font-size: 50px;
+  }
+  .masaj_tabel{
+    text-align: left;
+    width: 80%;
+    position: relative;
+    top: 250px;
+    margin-left: 115px;
+  }
+  .masaj_tabel table tr th {
+    border: 1px solid grey;
+  }
+  
+  /*##########################
+  ####ANT-INT################
+  ###########################*/
+  .antint_text1{
+      text-align: left;
+      position: relative;
+      top: 20%;
+      left: -6.5%;
+      color: black;
+      font-size: 50px;
+  }
+  
+  .antint_text2{
+    text-align: left;
+      position: relative;
+      top: 20%;
+      left: 7%;
+      color: black;
+      font-size: 50px;
+  }
+  
+  
+  .antint_text2 table{
+    width: 80%;
+  }
+  
+  .instructori{
+    position: relative; 
+  
+  }
+  .instructori table{
+    position: relative;
+    margin-left: 100px;
+    width: 60%;
+    top: 0px; 
+  }
+  .instructori img{
+    width: 250px;
+    position: relative;
+    top: 100px;
+    height: 300px;
+  }
+  
+  .instructori p{
+    text-align: left;
+  }
+  
+  
+  /*##########################
+  ####ANTPERS################
+  ###########################*/
+  
+  .antpers_text1{
+    text-align: left;
+      position: relative;
+      top: 20%;
+      left: 7%;
+      color: black;
+      font-size: 50px;
+  }
+  
+  .antpers_text1 th{
+    color: grey;
+  }
+  
+  .antpers_text1 table{
+    width: 80%;
+  }
+  
+  .instructoripers{
+    position: relative; 
+  
+  }
+  
+  .instructoripers table{
+    margin-left: 100px;
+    width: 60%;
+    position: relative;
+    top: 50px;
+  }
+  .instructoripers img{
+    width: 250px;
+    position: relative;
+    top:100px;
+    height: 300px;
+  }
+  
+  @font-face {
+    font-family: myFirstFont;
+    src: url(./pictures/font.ttf)
+  }
+  
+  #ff{
+    font-family: myFirstFont;
+  }
+  /* #antmore{
+    width: 30px;
+  } */
+  #more{
+    display: none;
+  }
+  #showmore{
+    position: relative;
+    padding: 7px;
+    left: 1170px;
+    top: 140px;
+  }
+  
+  /*##########################
+  ####ORAR################
+  ###########################*/
+  
+  .orar_text{
+    text-align: left;
+    position: relative;
+    top: 20%;
+    left: -6.5%;
+    color: black;
+    font-size: 50px;
+  }
+  
+  
+  .orar_fitness{
+    position: relative;
+    top: 15%;
+    left:8%;
+    text-align: left;
+  }
+  
+  .orar_fitness ol{
+    font-weight: bold;
+    
+  
+  }
+  
+  .orar_text1{
+    text-align: left;
+      position: relative;
+      top: 20%;
+      left: 7%;
+      color: black;
+      font-size: 50px;
+  }
+  
+  .orar_tabel1{
+    text-align: left;
+    width: 80%;
+    position: relative;
+    top: 20%;
+    margin-left: 115px;
+  }
+  .orar_tabel1 table tr th {
+    border: 1px solid grey;
+  }
+  
+  
+  /*##########################
+  ####CONTACT################
+  ###########################*/
+  
+  .contact_text1{
+    text-align: left;
+      position: relative;
+      top: 20%;
+      left: 7%;
+      color: black;
+      font-size: 50px;
+  }
+  .contact_text1 th{
+    color: grey;
+  }
+  .contact_text1 table{
+    width: 80%;
+  }
+  .google{
+    position: relative;
+    margin: 1px;
+    top: 150px;
+    left: 110px;
+  }
+  
+  .social {
+    text-align: center;
+    position: relative;
+    top: -87%;
+    left: 42%;
+  }
+  .social li {
+    display:inline-block;
+    list-style-type:none;
+  
+  }
+  .social li a {
+    border-bottom: none;
+  }
+  .social li img {
+    width:70px;
+    height:70px;
+    margin-right: 20px;
+  }
+  
+  audio{
+    position: relative;
+    left: 50%;
+  }
+
+  * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
+.valid {
+  color: green;
+}
+button[name="oferta"]{
+  position: relative;
+  top: 200px;
+  left: 50px;
+}
+#demo{
+  position: relative;
+  top: 200px;
+  left: 50px;
+  font-size: 35px;
+}
+#red{
+  position: relative;
+  top: 220px;
+  left: 50px;
+  font-size: 50px;
+}
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+button[name="antbtn"]{
+  position: relative;
+  left:1000px;
+  top:-980px
+}
+button[name="antbtn1"]{
+  position: relative;
+  left:1000px;
+  
+}
+
+  
+  }
+  
+  @media (max-width:1000px){
+    .imghero_text p1{top: 30%; font-size: 40px; left: 170px;}
+    .imghero_text p{top: 33%; font-size: 15px; left: 170px;}
+    .imghero img{top: 150px;}
+    .box1{top:150px;}
+    .servicii_box1{top:600px; }
+    .servicii_text{text-align: center; left: 0%; font-size: 30px;}
+    .masaj_text1{
+      top: 15%;
+      text-align: center;
+    }
+    .masaj_text2{
+      left:10%;
+    }
+    .masaj_poza1{
+      top: 400px;
+      left:10%;
+    }
+    .masaj_poza_text1{
+      top: 400px;
+    }
+    .masaj_poza_text2{
+      top:400px;
+      font-size: 7mm;
+      text-align: left;
+      left:100px;
+    }
+    .masaj_text3{
+      top: 380px;
+    }
+    .masaj_tabel{
+      top: 380px;
+    }
+    .antint_text1{text-align: center; left: 0%; top: 15%;}
+    .antint_text2{left: 10%;}
+    .instructori table{top:250px;}
+    .instructori p{font-size: 6px;}
+    .instructoripers table{top:250px; left: -3%;}
+    .instructoripers p{font-size: 6px;}
+    .orar_text{top:15%; font-size: 30px; left: -18%;}
+    .orar_text1{font-size: 30px; left: 4%;}
+    .orar_fitness{top: 17%;
+      position: relative;
+      text-align: left;
+      font-size: 20px;
+      width: 100%;
+    }
+    .orar_fitness ol1{
+      position: relative;
+      left:-10.5%;
+    }
+    .google{
+      top:470px;
+      left: 70px;
+    }
+    .social {
+      text-align: center;
+      position: relative;
+      top: -30%;
+      left: 40%;
+    }
+    .audio{
+      left: 70%;
+    }
+    }
